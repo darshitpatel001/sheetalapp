@@ -22,6 +22,7 @@ import Myformik from './Myformik';
 import Formformik from './Formformik';
 import Carformik from './Carformik';
 import Taskvalidation from './Taskvalidation';
+import Cardlayout from './Props/Cardlayout';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -41,7 +42,8 @@ root.render(
   {/* <Formcoll /> */}
   {/* <Myformik /> */}
   {/* <Formformik/> */}
-  <Taskvalidation/>
+  {/* <Taskvalidation/> */}
+  <Cardlayout/>
   {/* <Carformik/> */}
   </React.StrictMode>
 );
