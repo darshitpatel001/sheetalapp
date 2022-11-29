@@ -15,7 +15,7 @@ export default function Cardlayout() {
     
 
   return (
-    <div >
+    <div className='row'>
       {
         first.map((a)=>{
             return(<Simplprops record={a}></Simplprops>)
