@@ -14,4 +14,4 @@ export default function Simplprops(first) {
       </div>
     </div>
   );
-}
+}   
