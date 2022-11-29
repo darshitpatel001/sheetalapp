@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Simplprops(first) {
   return (
-    <div style={{backgroundColor:'none'}}>
+    <div >
     <div class="card" style="width:400px">
     <img class="card-img-top" src={first.record.image}/>
     <div class="card-body">

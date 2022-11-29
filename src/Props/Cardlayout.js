@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useState , useEffect } from 'react';
+import Simplprops from './Simplprops';
 
 export default function Cardlayout() {
 
@@ -14,10 +15,10 @@ export default function Cardlayout() {
     
 
   return (
-    <div style={{backgroundColor:'none'}}>
+    <div >
       {
         first.map((a)=>{
-            return(<Cardlayout record={a}></Cardlayout>)
+            return(<Simplprops record={a}></Simplprops>)
         })
 
       }
