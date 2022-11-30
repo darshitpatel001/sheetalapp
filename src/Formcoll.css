@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
 
   }
@@ -33,9 +33,9 @@
   .iid
    {
     border: none;
-    padding: 5px;
+    padding: 5px; */
     /* margin-top: 15px; */
-    font-family: sans-serif;
+    /* font-family: sans-serif;
   }
   
   .input:focus
@@ -54,4 +54,4 @@
   
  .submit:hover {
     box-shadow: 3px 3px 6px rgb(245, 198, 153);
-  }
+  } */
