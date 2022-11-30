@@ -24,7 +24,7 @@ export default function MyGrid() {
   }, []);
 
   return (
-    <div className="ag-theme-alpine" style={{ width: 500, height: 500 }}>
+    <div className="ag-theme-alpine" style={{ width: 1400, height: 650 }}>
       <AgGridReact rowData={row} columnDefs={colum}></AgGridReact>
     </div>
   );
