@@ -10,7 +10,7 @@ export default function MyGrid() {
 
   const [colum, setColum] = useState([
     { field: "postId", filter: true },
-    { field: "name" },
+    { field: "name" ,filter: true,sortable: true},
     { field: "email" },
     { field: "body" },
   ]);
