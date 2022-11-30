@@ -24,6 +24,7 @@ import Carformik from './Carformik';
 import Taskvalidation from './Taskvalidation';
 import Cardlayout from './Props/Cardlayout';
 import Eductiontodo from './Props/Eductiontodo';
+import MyGrid from './MyGrid';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -45,8 +46,9 @@ root.render(
   {/* <Formformik/> */}
   {/* <Taskvalidation/> */}
   {/* <Cardlayout/> */}
-  <Eductiontodo/>
+  {/* <Eductiontodo/> */}
   {/* <Carformik/> */}
+  <MyGrid/>
   </React.StrictMode>
 );
 
