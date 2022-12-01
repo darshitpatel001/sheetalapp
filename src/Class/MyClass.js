@@ -17,6 +17,7 @@ export default class MyClass extends Component {
             this.setState(({records: x.data}));
         })
     }
+    
   render() {
     return (
       <div>{this.state.records.map((ele) =>{
