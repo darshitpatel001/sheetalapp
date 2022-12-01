@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 import axios from 'axios';
+import MyClassProp1 from './MyClassProp1';
 
 export default class MyClass extends Component {
 
@@ -11,7 +12,7 @@ export default class MyClass extends Component {
 
     componentDidMount()
     {
-        axios.get("https://jsonplaceholder.typicode.com/comments")
+        axios.get("https://fakestoreapi.com/products")
         .then(x=> {
             this.setState(({records: x.data}));
         })
@@ -19,7 +20,7 @@ export default class MyClass extends Component {
   render() {
     return (
       <div>{this.state.records.map((ele) =>{
-        return(<div>{ele.email}</div>)
+        return(<div><MyClassProp1 dataa={ele}></MyClassProp1></div>)
 
       })}</div>
     )
