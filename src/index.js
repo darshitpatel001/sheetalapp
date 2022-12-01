@@ -26,6 +26,7 @@ import Cardlayout from "./Props/Cardlayout";
 import Eductiontodo from "./Props/Eductiontodo";
 import MyGrid from "./Grid/MyGrid";
 import MyGrid2 from "./Grid/MyGrid2";
+import MyClass from "./Class/MyClass";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -53,7 +54,9 @@ root.render(
     {/* <Carformik/> */}
     {/* -----------------------------grid--------------------------------------- */}
     {/* <MyGrid /> */}
-    <MyGrid2 />
+    {/* <MyGrid2 /> */}
+    {/* .............................class----------------------------------------- */}
+    <MyClass />
   </React.StrictMode>
 );
 
