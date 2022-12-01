@@ -19,7 +19,7 @@ export default function MyGrid() {
     fetch("https://jsonplaceholder.typicode.com/comments")
       .then((y) => y.json())
       .then((y) => {
-        setrow(y);
+      setrow(y);
       });
   }, []);
 
