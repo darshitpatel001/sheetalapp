@@ -1,57 +1,59 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-// import './index.css';  
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Home from './Home';
-import Counter from './Counter';
-import Magic from './Magic';
-import Mydata from './Mydata';
-import Card from './Card';
-import Tasks from './Tasks';
-import Fatch from './Fatch';
-import Fatchapi from './Fatchapi';
-import Axioss from './Test';
-import Test from './Test';
-import Emploayee from './Emploayee';
-import Form from './Form';
-import Formdegree from './Formdegree';
-import Formcoll from './Formcoll';
-import { Formik } from 'formik';
-import Myformik from './Myformik';
-import Formformik from './Formformik';
-import Carformik from './Carformik';
-import Taskvalidation from './Taskvalidation';
-import Cardlayout from './Props/Cardlayout';
-import Eductiontodo from './Props/Eductiontodo';
-import MyGrid from './Grid/MyGrid';
-import MyGrid2 from './Grid/MyGrid2';
+import React from "react";
+import ReactDOM from "react-dom/client";
+// import './index.css';
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import Home from "./Home";
+import Counter from "./Counter";
+import Magic from "./Magic";
+import Mydata from "./Mydata";
+import Card from "./Card";
+import Tasks from "./Tasks";
+import Fatch from "./Fatch";
+import Fatchapi from "./Fatchapi";
+import Axioss from "./Test";
+import Test from "./Test";
+import Emploayee from "./Emploayee";
+import Form from "./Form";
+import Formdegree from "./Formdegree";
+import Formcoll from "./Formcoll";
+import { Formik } from "formik";
+import Myformik from "./Myformik";
+import Formformik from "./Formformik";
+import Carformik from "./Carformik";
+import Taskvalidation from "./Taskvalidation";
+import Cardlayout from "./Props/Cardlayout";
+import Eductiontodo from "./Props/Eductiontodo";
+import MyGrid from "./Grid/MyGrid";
+import MyGrid2 from "./Grid/MyGrid2";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     {/* <Counter />
     <Home /> */}
     {/* <Magic /> */}
-  {/* <Mydata/> */}
-  {/* <Card /> */}
-  {/* <Tasks /> */}
-  {/* <Fatch/> */}
-  {/* <Test/> */}
-  {/* <Fatchapi /> */}
-  {/* <Emploayee/> */}
-  {/* <Form/> */}
-  {/* <Formdegree/> */}
-  {/* <Formcoll /> */}
-  {/* <Myformik /> */}
-  {/* <Formformik/> */}
-  {/* <Taskvalidation/> */}
-  {/* <Cardlayout/> */}
-  {/* <Eductiontodo/> */}
-  {/* <Carformik/> */}
-{/* <MyGrid /> */}
-<MyGrid2 />
+    {/* <Mydata/> */}
+    {/* <Card /> */}
+    {/* <Tasks /> */}
+    {/* -------------------------------api------------------------------------- */}
+    {/* <Fatch/> */}
+    {/* <Test/> */}
+    {/* <Fatchapi /> */}
+    {/* <Emploayee/> */}
+    {/* -----------------------------form-------------------------------------- */}
+    {/* <Form/> */}
+    {/* <Formdegree/> */}
+    {/* <Formcoll /> */}
+    {/* <Myformik /> */}
+    {/* <Formformik/> */}
+    {/* <Taskvalidation/> */}
+    {/* <Cardlayout/> */}
+    {/* <Eductiontodo/> */}
+    {/* <Carformik/> */}
+    {/* -----------------------------grid--------------------------------------- */}
+    {/* <MyGrid /> */}
+    <MyGrid2 />
   </React.StrictMode>
 );
 
