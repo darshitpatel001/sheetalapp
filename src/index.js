@@ -27,6 +27,7 @@ import Eductiontodo from "./Props/Eductiontodo";
 import MyGrid from "./Grid/MyGrid";
 import MyGrid2 from "./Grid/MyGrid2";
 import MyClass from "./Class/MyClass";
+import Apipost from "./Class/Apipost";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -56,7 +57,8 @@ root.render(
     {/* <MyGrid /> */}
     {/* <MyGrid2 /> */}
     {/* .............................class----------------------------------------- */}
-    <MyClass />
+    {/* <MyClass /> */}
+    <Apipost />
   </React.StrictMode>
 );
 
