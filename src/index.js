@@ -28,6 +28,10 @@ import MyGrid from "./Grid/MyGrid";
 import MyGrid2 from "./Grid/MyGrid2";
 import MyClass from "./Class/MyClass";
 import Apipost from "./Class/Apipost";
+import Login from "./Login/Login";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -59,6 +63,8 @@ root.render(
     {/* .............................class----------------------------------------- */}
     {/* <MyClass /> */}
     <Apipost />
+    <ToastContainer/>
+    <Login />
   </React.StrictMode>
 );
 
