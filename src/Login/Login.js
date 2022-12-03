@@ -19,9 +19,10 @@ export default function () {
             .post("http://localhost:4000/api-docs/#/default/authenticate",e)
             .then((y) => {
               toast("Login is Successful");
-              console.log(e);
+              console.log(y);
             }).catch((y) =>{
                 toast("Login is Faild");
+                console.log(y);
             });
         }}
       >
