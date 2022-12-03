@@ -62,7 +62,7 @@ root.render(
     {/* <MyGrid2 /> */}
     {/* .............................class----------------------------------------- */}
     {/* <MyClass /> */}
-    <Apipost />
+    {/* <Apipost /> */}
     <ToastContainer/>
     <Login />
   </React.StrictMode>
