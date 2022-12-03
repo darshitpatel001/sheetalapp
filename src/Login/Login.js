@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import { Formik, Form, Field } from "formik";
 
@@ -17,16 +16,16 @@ export default function () {
         onSubmit={(e) => {
           axios
             .post("http://localhost:4000/api-docs/#/default/authenticate",e)
-            .then((y) => {
+            .then(y=> {
               toast("Login is Successful");
-              console.log(y);
-            }).catch((y) =>{
+              console.log(y.data);
+            }).catch(() =>{
                 toast("Login is Faild");
-                console.log(y);
+
             });
         }}
       >
-        <Form>
+        <Form class="container">
           <label htmlFor=""> Email : </label>
           <Field name="email" type="text" /><br/>
           <label htmlFor=""> Password : </label>
