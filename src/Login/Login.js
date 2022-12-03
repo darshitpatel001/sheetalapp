@@ -16,9 +16,11 @@ export default function () {
         onSubmit={(e) => {
           axios.post("http://localhost:4000/api-docs/#/default/authenticate",e)
             .then(y=> {
-              toast("Login is Successful");
               console.log(y.data);
-            }).catch(() =>{
+              toast("Login is Successful");
+
+            }).catch(
+              () =>{
                 toast("Login is Faild");
 
             });
@@ -26,9 +28,9 @@ export default function () {
       >
         <Form class="container">
           <label htmlFor=""> Email : </label>
-          <Field name="email" type="text" /><br/>
+          <Field type="text" name="email"/><br/>
           <label htmlFor=""> Password : </label>
-          <Field name="password" type="text" /><br/>
+          <Field type="text"  name="password"  /><br/>
 
           <input type="submit" value="submit" />
         </Form>
