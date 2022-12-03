@@ -14,8 +14,7 @@ export default function () {
           password: "",
         }}
         onSubmit={(e) => {
-          axios
-            .post("http://localhost:4000/api-docs/#/default/authenticate",e)
+          axios.post("http://localhost:4000/api-docs/#/default/authenticate",e)
             .then(y=> {
               toast("Login is Successful");
               console.log(y.data);
