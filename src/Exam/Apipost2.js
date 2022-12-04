@@ -16,7 +16,8 @@ export default function Apipost2() {
     <div>
 {
     data.map((d)=>{
-        return(<Api2display post={d}></Api2display>)
+        return(
+        <div class="col-3"><Api2display post={d.url}></Api2display></div>)
     })
 
 }
