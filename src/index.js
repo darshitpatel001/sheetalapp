@@ -35,6 +35,7 @@ import Apipost1 from "./Exam/Apipost1";
 import Apipost2 from "./Exam/Apipost2";
 import Apipostprect from "./Exam/Apiprecti";
 import ApiPrecti1 from "./Exam/ApiPrecti1,";
+import MyForm from "./Material Ui/MyForm";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -72,7 +73,8 @@ root.render(
     {/* <Apipost1 /> */}
     {/* <Apipost2 /> */}
     {/* <Apipostprect /> */}
-    <ApiPrecti1 />
+    {/* <ApiPrecti1 /> */}
+    <MyForm />
   </React.StrictMode>
 );
 
