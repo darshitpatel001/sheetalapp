@@ -34,6 +34,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Apipost1 from "./Exam/Apipost1";
 import Apipost2 from "./Exam/Apipost2";
 import Apipostprect from "./Exam/Apiprecti";
+import ApiPrecti1 from "./Exam/ApiPrecti1,";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -70,7 +71,8 @@ root.render(
     {/* <Login /> */}
     {/* <Apipost1 /> */}
     {/* <Apipost2 /> */}
-    <Apipostprect />
+    {/* <Apipostprect /> */}
+    <ApiPrecti1 />
   </React.StrictMode>
 );
 
