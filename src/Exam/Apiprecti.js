@@ -1,6 +1,7 @@
 import React from 'react'
 import { Formik, Form, Field } from "formik";
 import axios from 'axios';
+import { ToastContainer, toast } from "react-toastify";
 
 export default function Apipostprect() {
     return (
@@ -19,7 +20,7 @@ export default function Apipostprect() {
                     console.log(y);
                     toast("Data save");
                 }).catch(() =>{
-                    toast("Not Save");
+                    toast("Not save");
                   })
                 }}
             >
@@ -39,7 +40,7 @@ export default function Apipostprect() {
               <label htmlFor="" class="form-label"> Address: </label>
               <Field type="address" class="form-control" name="address"/><br/>
               
-              <input type="submit" value="submit"/>
+              <input class="form-control btn btn-outline-primary" type="submit" value="submit"/>
                 </Form>
     
             </Formik>
