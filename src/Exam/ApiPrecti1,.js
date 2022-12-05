@@ -7,7 +7,7 @@ export default function ApiPrecti1() {
     const [data, setdata] = useState([]);
 
 useEffect(() => {
-    axios.post("https://jsonplaceholder.typicode.com/users")
+    axios.get("https://jsonplaceholder.typicode.com/users")
     .then((y) => {
         setdata(y.data)
     })
@@ -17,7 +17,7 @@ useEffect(() => {
     <div>
 {
     data.map((ele) => {
-        return(<div><Apiprect1disply disp={ele.name}></Apiprect1disply></div>)
+        return(<div><Apiprect1disply disp={ele}></Apiprect1disply></div>)
     })
 }
     </div>
