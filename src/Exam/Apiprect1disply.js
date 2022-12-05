@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function Apiprect1disply(data) {
+export default function Apiprect1disply(props) {
   return (
-    <div>{data.disp.name}</div>
+    <div>{props.disp}</div>
   )
 }
