@@ -18,8 +18,10 @@ export default function Apipostprect() {
                 .then((y) =>{
                     console.log(y);
                     toast("Data save");
-                })
-            }}
+                }).catch(() =>{
+                    toast("");
+                  })
+                }}
             >
                 <Form>
               <label htmlFor="" class="form-label">Id: </label>
