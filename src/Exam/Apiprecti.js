@@ -19,7 +19,7 @@ export default function Apipostprect() {
                     console.log(y);
                     toast("Data save");
                 }).catch(() =>{
-                    toast("");
+                    toast("Not Save");
                   })
                 }}
             >
