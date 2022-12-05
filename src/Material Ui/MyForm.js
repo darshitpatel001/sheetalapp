@@ -12,7 +12,6 @@ export default function MyForm() {
   });
 
   const Handler = (e) => {
-    console.log(e);
     setdata({ ...data, [e.target.name]: e.target.value });
   };
 
