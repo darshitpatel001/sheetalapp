@@ -17,7 +17,7 @@ useEffect(() => {
     <div>
 {
     data.map((ele) => {
-        return(<div><Apiprect1disply disp={ele}></Apiprect1disply></div>)
+        return(<div><Apiprect1disply disp={ele} ></Apiprect1disply></div>)
     })
 }
     </div>
