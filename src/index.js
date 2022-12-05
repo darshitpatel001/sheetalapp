@@ -33,6 +33,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Apipost1 from "./Exam/Apipost1";
 import Apipost2 from "./Exam/Apipost2";
+import Apipostprect from "./Exam/Apiprecti";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -68,7 +69,8 @@ root.render(
     <ToastContainer/>
     {/* <Login /> */}
     {/* <Apipost1 /> */}
-    <Apipost2 />
+    {/* <Apipost2 /> */}
+    <Apipostprect />
   </React.StrictMode>
 );
 
