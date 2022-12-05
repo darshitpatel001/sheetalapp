@@ -1,14 +1,77 @@
-import React from 'react'
-import TextField from '@mui/material/TextField';
+import React from "react";
+import { useState } from "react";
+import TextField from "@mui/material/TextField";
 
 export default function MyForm() {
-  return (
-    <div>
-         <TextField label="First Name" variant="standard" />
-         <TextField label="Middle Name" variant="standard" />
-         <TextField label="email" variant="standard" />
-         <TextField label="City" variant="standard" />
+  const [data, setdata] = useState({
+    fname: "",
+    mname: "",
+    lname: "",
+    email: "",
+    city: "",
+  });
 
+  const Handler = (e) => {
+    console.log(e);
+    setdata({ ...data, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(data);
+  };
+  return (
+    <div className="ag-theme-alpine">
+      <form onSubmit={handleSubmit}>
+        <TextField
+          label="First Name"
+          variant="standard"
+          name="fname"
+          onChange={Handler}
+        />
+        <br />
+        <TextField
+          label="Middle Name"
+          variant="standard"
+          name="mname"
+          onChange={Handler}
+        />
+        <br />
+        <TextField
+          label="lname"
+          variant="standard"
+          name="lname"
+          onChange={Handler}
+        />
+        <br />
+        <TextField
+          label="email"
+          variant="standard"
+          name="email"
+          onChange={Handler}
+        />
+        <br />
+        <br />
+
+        <TextField
+          id="outlined-select-currency-native"
+          select
+          label="select"
+          SelectProps={{
+            native: true,
+          }}
+          name="city"
+          onChange={Handler}
+          helperText="Please select your currency"
+        >
+          <option>Surat</option>
+          <option>Vadodara</option>
+          <option>Bhavnagr</option>
+          <option>Rajkot</option>
+        </TextField>
+        <br />
+        <input type="submit" value="Save" />
+      </form>
     </div>
-  )
+  );
 }
