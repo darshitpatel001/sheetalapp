@@ -20,7 +20,7 @@ export default function MyForm() {
     console.log(data);
   };
   return (
-    <div className="ag-theme-alpine">
+    <div class="w-50 mx-auto">
       <form onSubmit={handleSubmit}>
         <TextField
           label="First Name"
@@ -69,7 +69,11 @@ export default function MyForm() {
           <option>Rajkot</option>
         </TextField>
         <br />
-        <input type="submit" value="Save" />
+        <input
+          class="form-control btn btn-outline-primary"
+          type="submit"
+          value="Save"
+        />
       </form>
     </div>
   );
