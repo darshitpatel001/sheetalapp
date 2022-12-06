@@ -74,7 +74,9 @@ root.render(
     {/* <Apipost2 /> */}
     {/* <Apipostprect /> */}
     {/* <ApiPrecti1 /> */}
+    {/* ---------------------------mul ui---------------------------------------------- */}
     <MyForm />
+
   </React.StrictMode>
 );
 
