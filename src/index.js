@@ -36,6 +36,7 @@ import Apipost2 from "./Exam/Apipost2";
 import Apipostprect from "./Exam/Apiprecti";
 import ApiPrecti1 from "./Exam/ApiPrecti1,";
 import MyForm from "./Material Ui/MyForm";
+import ReactMemo from "./ReactMemo";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -75,7 +76,8 @@ root.render(
     {/* <Apipostprect /> */}
     {/* <ApiPrecti1 /> */}
     {/* ---------------------------mul ui---------------------------------------------- */}
-    <MyForm />
+    {/* <MyForm /> */}
+    <ReactMemo />
 
   </React.StrictMode>
 );
