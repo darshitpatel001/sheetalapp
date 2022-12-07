@@ -77,7 +77,8 @@ root.render(
     {/* <ApiPrecti1 /> */}
     {/* ---------------------------mul ui---------------------------------------------- */}
     {/* <MyForm /> */}
-    <ReactMemo />
+    {/* <ReactMemo /> */}
+    
 
   </React.StrictMode>
 );

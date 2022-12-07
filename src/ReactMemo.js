@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { useCallback, useMemo } from 'react'
 import { useState } from 'react';
 import Reactmemo0 from './Reactmemo0';
 
@@ -16,9 +16,11 @@ export default function ReactMemo() {
         setitem(myitem)
     }
 
-    const remove = (index) =>{
-    
-    }
+    const remove = useCallback((index) =>{
+      let myitem = [...item]
+      myitem.splice(index,1)
+      setitem(myitem)
+    },[])
   return (
     <div>
         <input type="text" onChange={myHandler}/>
