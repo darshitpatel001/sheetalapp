@@ -27,7 +27,7 @@ export default function ReactMemo() {
 
         <button onClick={mysubmit}>Submit</button>
         
-        <Reactmemo0 data={item} remove={item}/>
+        <Reactmemo0 data={item} remove={remove}/>
     </div>
   )
 }

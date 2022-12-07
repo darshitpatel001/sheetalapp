@@ -78,8 +78,9 @@ root.render(
     {/* <ApiPrecti1 /> */}
     {/* ---------------------------mul ui---------------------------------------------- */}
     {/* <MyForm /> */}
-    {/* <ReactMemo /> */}
-    <MyReadMore text="My Name Is Darshit.I Am 20 Years Old. I Am Pursuing Bachelors Of Commarce From M.s.University I want to Become a Devloper."/>
+    {/* ---------------------------memo------------- */}
+    <ReactMemo />
+    {/* <MyReadMore text="My Name Is Darshit.I Am 20 Years Old. I Am Pursuing Bachelors Of Commarce From M.s.University I want to Become a Devloper."/> */}
 
   </React.StrictMode>
 );
