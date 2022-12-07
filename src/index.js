@@ -37,6 +37,7 @@ import Apipostprect from "./Exam/Apiprecti";
 import ApiPrecti1 from "./Exam/ApiPrecti1,";
 import MyForm from "./Material Ui/MyForm";
 import ReactMemo from "./ReactMemo";
+import MyReadMore from "./MyReadMore";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -78,7 +79,7 @@ root.render(
     {/* ---------------------------mul ui---------------------------------------------- */}
     {/* <MyForm /> */}
     {/* <ReactMemo /> */}
-    
+    <MyReadMore text="My Name Is Darshit.I Am 20 Years Old. I Am Pursuing Bachelors Of Commarce From M.s.University I want to Become a Devloper."/>
 
   </React.StrictMode>
 );
