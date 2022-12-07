@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { useState } from 'react';
 import Reactmemo0 from './Reactmemo0';
 
@@ -15,13 +15,17 @@ export default function ReactMemo() {
         myitem.push(data);
         setitem(myitem)
     }
+
+    const remove = (index) =>{
+    
+    }
   return (
     <div>
         <input type="text" onChange={myHandler}/>
 
         <button onClick={mysubmit}>Submit</button>
         
-        <Reactmemo0 data={item}/>
+        <Reactmemo0 data={item} remove={item}/>
     </div>
   )
 }
