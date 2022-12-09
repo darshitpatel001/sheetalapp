@@ -17,7 +17,7 @@ export default function Counterr() {
 
   return (
     <div>
-      {data}
+      {data}<br/>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
     </div>
