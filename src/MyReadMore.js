@@ -8,6 +8,7 @@ export default function MyReadMore(props) {
         return props.text.slice(0,30).
         concat("...")
     },[])
+    
   return (
     <div>
         <p onClick={()=>{setshoww(!showw)}}>
