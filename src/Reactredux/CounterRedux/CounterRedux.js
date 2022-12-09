@@ -1,5 +1,3 @@
- 
-
 export default (state = 0, { type, payload }) => {
   switch (type) {
 
