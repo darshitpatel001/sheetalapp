@@ -38,7 +38,10 @@ import ApiPrecti1 from "./Exam/ApiPrecti1,";
 import MyForm from "./Material Ui/MyForm";
 import ReactMemo from "./ReactMemo";
 import MyReadMore from "./MyReadMore";
+import Counterr from "./Counterr";
+import store from "./Reactredux/Store/Store";
 
+import { Provider } from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -70,7 +73,8 @@ root.render(
     {/* .............................class----------------------------------------- */}
     {/* <MyClass /> */}
     {/* <Apipost /> */}
-    <ToastContainer/>
+
+    {/* <ToastContainer /> */}
     {/* <Login /> */}
     {/* <Apipost1 /> */}
     {/* <Apipost2 /> */}
@@ -80,8 +84,11 @@ root.render(
     {/* <MyForm /> */}
     {/* ---------------------------memo------------- */}
     {/* <ReactMemo /> */}
-    <MyReadMore text="My Name Is Darshit.I Am 20 Years Old. I Am Pursuing Bachelors Of Commarce From M.s.University I want to Become a Devloper."/>
-
+    {/* <MyReadMore text="My Name Is Darshit.I Am 20 Years Old. I Am Pursuing Bachelors Of Commarce From M.s.University I want to Become a Devloper."/> */}
+    {/* -----------------------------------redux------------------------------- */}
+    <Provider store={store}>
+    <Counterr />
+    </Provider>
   </React.StrictMode>
 );
 

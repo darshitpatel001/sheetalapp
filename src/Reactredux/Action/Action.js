@@ -1,7 +1,7 @@
 export const Increment = () => ({
-    type : "Increment"
+    type : "Increment",
 })
 
 export const Decrement = () => ({
-    type : "Decrement"
+    type : "Decrement",
 })
