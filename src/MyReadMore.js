@@ -14,7 +14,7 @@ export default function MyReadMore(props) {
         <p onClick={()=>{setshoww(!showw)}}>
             {showw? props.text :truee}
         </p> 
-    
+  
     </div>
   )
 }
