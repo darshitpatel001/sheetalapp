@@ -13,7 +13,7 @@ export default function MyReadMore(props) {
     <div>
         <p onClick={()=>{setshoww(!showw)}}>
             {showw? props.text :truee}
-        </p>
+        </p> 
     
     </div>
   )
