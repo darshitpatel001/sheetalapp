@@ -8,7 +8,6 @@ export default function () {
   return (
     <div class="w-50 mx-auto">
       <h2 class="text-center">Login Form</h2>
-      
       <Formik
         initialValues={{
           email: "",
