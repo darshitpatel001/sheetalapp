@@ -75,7 +75,7 @@ root.render(
     {/* <Apipost /> */}
 
     {/* <ToastContainer /> */}
-    {/* <Login /> */}
+    <Login />
     {/* <Apipost1 /> */}
     {/* <Apipost2 /> */}
     {/* <Apipostprect /> */}
@@ -87,7 +87,7 @@ root.render(
     {/* <MyReadMore text="My Name Is Darshit.I Am 20 Years Old. I Am Pursuing Bachelors Of Commarce From M.s.University I want to Become a Devloper."/> */}
     {/* -----------------------------------redux------------------------------- */}
     <Provider store={store}>
-    <Counterr />
+    {/* <Counterr /> */}
     </Provider>
   </React.StrictMode>
 );

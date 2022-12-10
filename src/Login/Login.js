@@ -50,8 +50,8 @@ export default function () {
           <label htmlFor=""  class="form-label"> Password : </label>
           <Field type="password" class="form-control" name="password"  /><br/>
 
-          <input type="submit" class="form-control btn btn-outline-primary" value="Sign-in" />
-          <button onClick={displayData}>Display</button>
+          <input type="submit" class="form-control btn btn-outline-primary" value="Sign-in" /><br/>
+          <button class="form-control btn btn-outline-primary" onClick={displayData}>Display</button>
         </Form>
       </Formik>
     </div>
