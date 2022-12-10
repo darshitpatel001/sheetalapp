@@ -4,7 +4,20 @@ import axios from "axios";
 import { Formik, Form, Field } from "formik";
 
 export default function () {
-  
+  const displayData = ()=>{
+    let data = localStorage.getItem("User");
+    let d =JSON.parse(data);
+
+    axios.get("http://localhost:4000/account", {
+      headers : {
+        "Authorization" : "Bearer " + d?.jwtToken
+      }
+    }).then(y=>{
+      console.log(y.data)
+    }).catch(y=>{
+
+    });
+   }
   return (
     <div class="w-50 mx-auto">
       <h2 class="text-center">Login Form</h2>      
@@ -19,13 +32,16 @@ export default function () {
             .then(y=> {
               console.log(y.data);
 
-              lo
+              localStorage.setItem("User" ,JSON.stringify(y.data))
               toast("Login is Successful");
 
             }).catch(() =>{
               toast("Login is Faild");
             })
-          }}
+          }
+        }
+
+      
       >
 
         <Form >
@@ -35,6 +51,7 @@ export default function () {
           <Field type="password" class="form-control" name="password"  /><br/>
 
           <input type="submit" class="form-control btn btn-outline-primary" value="Sign-in" />
+          <button onClick={displayData}>Display</button>
         </Form>
       </Formik>
     </div>
