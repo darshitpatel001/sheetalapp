@@ -18,6 +18,8 @@ export default function () {
           axios.post("http://localhost:4000/accounts/authenticate",e)
             .then(y=> {
               console.log(y.data);
+
+              lo
               toast("Login is Successful");
 
             }).catch(() =>{
