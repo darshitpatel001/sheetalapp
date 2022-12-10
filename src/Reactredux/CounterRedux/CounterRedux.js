@@ -7,7 +7,7 @@ export default (state = 0, { type, payload }) => {
       return state - 1;
 
     case "Multiplaction":
-      return state *1;
+      return state *2;
 
     default:
       return state;

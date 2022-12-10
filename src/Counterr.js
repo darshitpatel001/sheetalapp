@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux/es/exports";
-import { Increment, Decrement } from "./Reactredux/Action/Action";
+import { Increment, Decrement, Multiplaction } from "./Reactredux/Action/Action";
 
 export default function Counterr() {
   const data = useSelector((d) => d);
