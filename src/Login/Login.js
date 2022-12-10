@@ -15,7 +15,7 @@ export default function () {
     }).then(y=>{
       console.log(y.data)
     }).catch(y=>{
-
+      console.log(y)
     });
    }
   return (
