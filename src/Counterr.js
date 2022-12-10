@@ -15,11 +15,16 @@ export default function Counterr() {
     mydisp(Decrement());
   };
 
+  const multiplaction = () => {
+    mydisp(Multiplaction());
+  };
+
   return (
     <div>
       {data}<br/>
       <button onClick={increment}>Increment</button>
       <button onClick={decrement}>Decrement</button>
+      <button onClick={multiplaction}>Multiplaction</button>
     </div>
   );
 }

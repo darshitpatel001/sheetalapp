@@ -5,3 +5,7 @@ export const Increment = () => ({
 export const Decrement = () => ({
     type : "Decrement",
 })
+
+export const Multiplaction = () => ({
+    type : "Multiplaction",
+})
