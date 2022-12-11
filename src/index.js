@@ -42,6 +42,7 @@ import Counterr from "./Counterr";
 import store from "./Reactredux/Store/Store";
 
 import { Provider } from "react-redux";
+import UiForm from "./Material Ui/UiForm";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -74,13 +75,14 @@ root.render(
     {/* <MyClass /> */}
     {/* <Apipost /> */}
     {/* <ToastContainer /> */}
-    <Login />
+    {/* <Login /> */}
     {/* <Apipost1 /> */}
     {/* <Apipost2 /> */}
     {/* <Apipostprect /> */}
     {/* <ApiPrecti1 /> */}
     {/* ---------------------------mul ui---------------------------------------------- */}
     {/* <MyForm /> */}
+    <UiForm />
     {/* ---------------------------memo------------- */}
     {/* <ReactMemo /> */}
     {/* <MyReadMore text="My Name Is Darshit.I Am 20 Years Old. I Am Pursuing Bachelors Of Commarce From M.s.University I want to Become a Devloper."/> */}
