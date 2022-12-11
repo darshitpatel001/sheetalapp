@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
+import './UiForm.css'
 
 export default function UiForm() {
     const [data, setdata] = useState({
@@ -8,6 +9,7 @@ export default function UiForm() {
         mname: "",
         lname: "",
         email: "",
+        password:"",
         city: "",
       });
       const Handler = (e) => {
@@ -22,6 +24,7 @@ export default function UiForm() {
       return (
         <div class="w-50 mx-auto">
           <form onSubmit={handleSubmit}>
+             <h2>Registation Form</h2>
             <TextField
               label="First Name"
               variant="standard"
@@ -37,41 +40,24 @@ export default function UiForm() {
             />
             <br />
             <TextField
-              label="lname"
+              label="Last Name"
               variant="standard"
               name="lname"
               onChange={Handler}
             />
             <br />
             <TextField
-              label="email"
+              label="Password"
               variant="standard"
-              name="email"
+               type="password"
+               autoComplete="current-password"
+              name="password"
               onChange={Handler}
-            />
-            <br />
-            <br />
-            <OutlinedInput
-            id="outlined-adornment-password"
-            type={values.showPassword ? 'text' : 'password'}
-            value={values.password}
-            onChange={handleChange('password')}
-            endAdornment={
-              <InputAdornment position="end">
-                <IconButton
-                  aria-label="toggle password visibility"
-                  onClick={handleClickShowPassword}
-                  onMouseDown={handleMouseDownPassword}
-                  edge="end"
-                >
-                  {values.showPassword ? <VisibilityOff /> : <Visibility />}
-                </IconButton>
-              </InputAdornment>
-            }
-            label="Password"
-          />
+            /><br/>
+
             <TextField
               id="outlined-select-currency-native"
+              variant="standard"
               select
               label="select"
               SelectProps={{
@@ -81,6 +67,7 @@ export default function UiForm() {
               onChange={Handler}
               helperText="Please select your currency"
             >
+                <option></option>
               <option>Surat</option>
               <option>Vadodara</option>
               <option>Bhavnagr</option>
