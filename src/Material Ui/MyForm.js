@@ -12,7 +12,7 @@ export default function MyForm() {
   });
 
   const Handler = (e) => {
-    setdata({ ...data, [e.target.name]: e.target.value });
+    setdata({ ...data, [e.target.name]: e.target.value});
   };
 
   const handleSubmit = (e) => {
