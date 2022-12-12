@@ -19,7 +19,6 @@ export default function MyForm() {
     e.preventDefault();
     console.log(data);
   };
- 
   
   return (
     <div class="w-50 mx-auto">
