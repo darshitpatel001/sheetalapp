@@ -3,6 +3,20 @@ import { useState } from "react";
 import TextField from "@mui/material/TextField";
 
 export default function MyForm() {
+  const displayData = ()=>{
+    let data = localStorage.getItem("Registation");
+    let d =JSON.parse(data);
+
+    axios.get("http://localhost:4000/account", {
+      headers : {
+        "Authorization" : "Bearer " + d?.jwtToken
+      }
+    }).then(y=>{
+      console.log(y.data)
+    }).catch(y=>{
+      console.log(y)
+    });
+   }
   const [data, setdata] = useState({
     fname: "",
     mname: "",
@@ -19,6 +33,7 @@ export default function MyForm() {
     e.preventDefault();
     console.log(data);
   };
+ 
   
   return (
     <div class="w-50 mx-auto">
