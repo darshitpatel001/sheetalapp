@@ -3,7 +3,6 @@ import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import axios from "axios";
 import "./UiForm.css";
-import { Formik, Form } from "formik";
 
 export default function UiForm() {
   const displayData = () => {
