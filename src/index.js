@@ -46,6 +46,7 @@ import store from "./Reactredux/Store/Store";
 
 import { Provider } from "react-redux";
 import UiForm from "./Material Ui/UiForm";
+import Audio from "./Audio/Audio";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -79,7 +80,7 @@ root.render(
     {/* <MyClass /> */}
     {/* <Apipost /> */}
     {/* <ToastContainer /> */}
-    <Login />
+    {/* <Login /> */}
     {/* <Apipost1 /> */}
     {/* <Apipost2 /> */}
     {/* <Apipostprect /> */}
@@ -94,6 +95,7 @@ root.render(
     {/* <Provider store={store}>
     {/* <Counterr /> */}
     {/* </Provider> */}
+    <Audio />
   </React.StrictMode> 
 );
 
