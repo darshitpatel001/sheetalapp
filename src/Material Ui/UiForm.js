@@ -3,6 +3,7 @@ import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import axios from "axios";
 import "./UiForm.css";
+import { ToastContainer, toast } from "react-toastify";
 
 export default function UiForm() {
   const displayData = () => {
@@ -17,11 +18,23 @@ export default function UiForm() {
       })
       .then((y) => {
         console.log(y.data);
+        toast("Login is Successful");
       })
       .catch((y) => {
         console.log(y);
+        toast("Login is Faild");
       });
   };
+
+  const [data, setdata] = useState({
+    fname: "",
+    mname: "",
+    lname: "",
+    email: "",
+    password: "",
+    city: "",
+  });
+ 
   const Handler = (e) => {
     setdata({ ...data, [e.target.name]: e.target.value });
   };
@@ -30,7 +43,14 @@ export default function UiForm() {
     e.preventDefault();
     console.log(data);
   };
-
+  onsubmit = (e) => {
+    {
+      axios.post("http://localhost:4000/accounts/authenticate", e).then((y) => {
+        console.log(y.data);
+        localStorage.setItem("Registation", JSON.stringify(y.data));
+      });
+    }
+  };
   return (
     <div class="w-50 mx-auto">
       <form onSubmit={handleSubmit}>

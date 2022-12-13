@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import   "./Axios/Globalaxios"
 // import './index.css';
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -22,6 +23,7 @@ import Myformik from "./Myformik";
 import Formformik from "./Formformik";
 import Carformik from "./Carformik";
 import Taskvalidation from "./Taskvalidation";
+
 import Cardlayout from "./Props/Cardlayout";
 import Eductiontodo from "./Props/Eductiontodo";
 import MyGrid from "./Grid/MyGrid";
@@ -41,8 +43,10 @@ import MyReadMore from "./MyReadMore";
 import Counterr from "./Counterr";
 import store from "./Reactredux/Store/Store";
 
+
 import { Provider } from "react-redux";
 import UiForm from "./Material Ui/UiForm";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -75,22 +79,22 @@ root.render(
     {/* <MyClass /> */}
     {/* <Apipost /> */}
     {/* <ToastContainer /> */}
-    {/* <Login /> */}
+    <Login />
     {/* <Apipost1 /> */}
     {/* <Apipost2 /> */}
     {/* <Apipostprect /> */}
     {/* <ApiPrecti1 /> */}
     {/* ---------------------------mul ui---------------------------------------------- */}
     {/* <MyForm /> */}
-    <UiForm />
+    {/* <UiForm /> */}
     {/* ---------------------------memo------------- */}
     {/* <ReactMemo /> */}
     {/* <MyReadMore text="My Name Is Darshit.I Am 20 Years Old. I Am Pursuing Bachelors Of Commarce From M.s.University I want to Become a Devloper."/> */}
     {/* -----------------------------------redux------------------------------- */}
-    <Provider store={store}>
+    {/* <Provider store={store}>
     {/* <Counterr /> */}
-    </Provider>
-  </React.StrictMode>
+    {/* </Provider> */}
+  </React.StrictMode> 
 );
 
 // If you want to start measuring performance in your app, pass a function

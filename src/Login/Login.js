@@ -5,12 +5,11 @@ import { Formik, Form, Field } from "formik";
 
 export default function () {
   const displayData = ()=>{
+   
 
-    axios.get("http://localhost:4000/account", {
-      headers : {
-        "Authorization" : "Bearer " + d?.jwtToken
-      }
-    }).then(y=>{
+    axios.get("http://localhost:4000/accounts"
+    
+      ).then(y=>{
       console.log(y.data)
     }).catch(y=>{
       console.log(y)
@@ -50,9 +49,11 @@ export default function () {
 
           <input type="submit" class="form-control btn btn-outline-primary" value="Sign-in" /><br/><br/>
 
-          <button class="form-control btn btn-outline-primary" onClick={displayData}>Display</button>
+         
         </Form>
+       
       </Formik>
+      <button class="form-control btn btn-outline-primary" onClick={displayData} type="button">Display</button>
     </div>
   );
 }
