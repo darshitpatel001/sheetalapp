@@ -5,23 +5,6 @@ import axios from "axios";
 import "./UiForm.css";
 
 export default function UiForm() {
-  onsubmit = (e) => {
-    {
-      axios.post("http://localhost:4000/accounts/authenticate", e).then((y) => {
-        console.log(y.data);
-        localStorage.setItem("Registation", JSON.stringify(y.data));
-      });
-    }
-  };
-
-  const [data, setdata] = useState({
-    fname: "",
-    mname: "",
-    lname: "",
-    email: "",
-    password: "",
-    city: "",
-  });
   const displayData = () => {
     let data = localStorage.getItem("Registation");
     let d = JSON.parse(data);

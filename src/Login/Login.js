@@ -5,8 +5,6 @@ import { Formik, Form, Field } from "formik";
 
 export default function () {
   const displayData = ()=>{
-    let data = localStorage.getItem("User");
-    let d =JSON.parse(data);
 
     axios.get("http://localhost:4000/account", {
       headers : {
