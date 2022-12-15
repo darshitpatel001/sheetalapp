@@ -96,6 +96,9 @@ root.render(
     {/* <Counterr /> */}
     {/* </Provider> */}
     <Audio />
+    <BrowserRouter>
+    
+    </BrowserRouter>
   </React.StrictMode> 
 );
 
