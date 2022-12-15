@@ -47,7 +47,7 @@ import store from "./Reactredux/Store/Store";
 import { Provider } from "react-redux";
 import UiForm from "./Material Ui/UiForm";
 import Audio from "./Audio/Audio";
-
+import Header from "./Router/Header";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -95,9 +95,9 @@ root.render(
     {/* <Provider store={store}>
     {/* <Counterr /> */}
     {/* </Provider> */}
-    <Audio />
+    {/* <Audio /> */}
     <BrowserRouter>
-    
+    {/* <Header /> */}
     </BrowserRouter>
   </React.StrictMode> 
 );
