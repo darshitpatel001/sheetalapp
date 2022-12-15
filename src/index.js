@@ -46,8 +46,10 @@ import store from "./Reactredux/Store/Store";
 import { Provider } from "react-redux";
 import UiForm from "./Material Ui/UiForm";
 import Audio from "./Audio/Audio";
+
+import { BrowserRouter , Routes , Route } from "react-router-dom";
 import Header from "./Router/Header";
-import Home from "./Router/Home";
+import Homee from "./Router/Header";
 import About from "./Router/About";
 import Error from "./Router/Error";
 import Contact from "./Router/Contact";
@@ -102,7 +104,7 @@ root.render(
     <BrowserRouter>
     <Header />
     <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/home" element={<Homee />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
