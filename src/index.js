@@ -43,11 +43,15 @@ import MyReadMore from "./MyReadMore";
 import Counterr from "./Counterr";
 import store from "./Reactredux/Store/Store";
 
-
+import { BrowserRouter , Routes , Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import UiForm from "./Material Ui/UiForm";
 import Audio from "./Audio/Audio";
 import Header from "./Router/Header";
+import Home from "./Router/Home";
+import About from "./Router/About";
+import Error from "./Router/Error";
+import Contact from "./Router/Contact";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -97,7 +101,13 @@ root.render(
     {/* </Provider> */}
     {/* <Audio /> */}
     <BrowserRouter>
-    {/* <Header /> */}
+    <Header />
+    <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
+      </Routes>
     </BrowserRouter>
   </React.StrictMode> 
 );
