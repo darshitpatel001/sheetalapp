@@ -49,10 +49,13 @@ import Audio from "./Audio/Audio";
 
 import { BrowserRouter , Routes , Route } from "react-router-dom";
 import Header from "./Router/Header";
-import Homee from "./Router/Header";
+import Homee from "./Router/Homee";
 import About from "./Router/About";
 import Error from "./Router/Error";
 import Contact from "./Router/Contact";
+import Footer from "./Router/Footer";
+import UseEfflimtLeval2 from "./UseEffect/UseEfflimtLeval2";
+import CounterUsE from "./UseEffect/CounterUsE"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -101,15 +104,20 @@ root.render(
     {/* <Counterr /> */}
     {/* </Provider> */}
     {/* <Audio /> */}
-    <BrowserRouter>
+    {/* -----------------------router------------------------- */}
+    {/* <BrowserRouter>
     <Header />
     <Routes>
-          <Route path="/home" element={<Homee />} />
+    <Route path="/" element={<Homee/>} ></Route>
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Error />} />
       </Routes>
-    </BrowserRouter>
+      <Footer />
+    </BrowserRouter> */}
+    {/* ------------------------useE  ROU---------- */}
+    {/* <UseEfflimtLeval2 /> */}
+    <CounterUsE />
   </React.StrictMode> 
 );
 
