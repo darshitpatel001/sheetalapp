@@ -117,7 +117,9 @@ root.render(
     </BrowserRouter> */}
     {/* ------------------------useE  ROU---------- */}
     {/* <UseEfflimtLeval2 /> */}
-    <CounterUsE />
+    {/* <CounterUsE /> */}
+    
+    <Myreducer/>
   </React.StrictMode> 
 );
 
