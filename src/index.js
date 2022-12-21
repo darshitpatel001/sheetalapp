@@ -119,7 +119,9 @@ root.render(
     {/* <UseEfflimtLeval2 /> */}
     {/* <CounterUsE /> */}
     
-    <Myreducer/>
+    {/* <Myreducer/> */}
+
+    <App/>
   </React.StrictMode> 
 );
 
